@@ -1,9 +1,9 @@
 import * as express from 'express'
 import { Request, Response } from 'express'
-import IControllerBaseInterface from 'interfaces/IControllerBase.interface'
+import ControllerBaseInterface from 'interfaces/ControllerBase.interface'
 import ErrorHandler from "../utils/ErrorHandler.util";
 
-class IndexController implements IControllerBaseInterface {
+class IndexController implements ControllerBaseInterface {
     public path = '/'
     public router = express.Router()
 
