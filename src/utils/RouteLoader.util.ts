@@ -1,6 +1,5 @@
 import * as path from "path";
 import * as fs from "fs";
-import {Router} from "express";
 
 const RouteLoader = () => {
     const routes = []
@@ -17,8 +16,6 @@ const RouteLoader = () => {
 
         routes.push(router)
     });
-
-    console.log(`> Loaded ${jsfiles.length} API Routes`);
 
     return routes;
 }

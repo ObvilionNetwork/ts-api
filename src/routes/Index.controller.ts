@@ -13,12 +13,6 @@ class IndexController implements IControllerBaseInterface {
                 message: "nufssll"
             })
         }))
-
-        this.router.get(this.path + "s", ErrorHandler((req: Request, res: Response) => {
-            req.res.json({
-                message: "nufssll"
-            })
-        }))
     }
 }
 
